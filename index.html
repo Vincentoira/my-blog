@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<title>LOGIN PAGE</title>
+</head>
+
+<body>
+	<form class="box">
+		<h1>lOG In</h1>
+		<input type="text" name="" placeholder="Enter Username" required>
+		<input type="email" name="" placeholder="email" required>
+		<input type="password" name="" placeholder="password" required>
+		<input type="Submit" name="Submit" id="logButton" value="Login" onclick="myfunction()">
+		<p>
+			Don't have account? <a href="#">SignUp</a>
+		</p>
+	</form>
+	<script>
+		var form = document.getElementById('form')
+
+		form.addEventListener('submit', function (event) {
+			event.preventDefault() // prevent the form from autosubmitting
+
+			var EnterUsername = document.getElementById('Enter Username').value
+
+			console.log(EnterUsername)
+
+			var email = document.getElementById('email').value
+
+			console.log(email)
+		})
+	</script>
+
+	<script>
+		function myfunction() {
+			window.location = "home.html"
+		}
+	</script>
+</body>
+
+</html>
